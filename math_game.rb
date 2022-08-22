@@ -1,14 +1,4 @@
-#define each player
-class Player
-  attr_accessor :name
-  attr_accessor :score
-  def initialize(name)
-    @name = name
-    @score = 3
-  end
-end
-
-#define game
+# require "player.rb"
 class Math_game
 
   def initialize
@@ -59,7 +49,7 @@ class Math_game
       puts "Good Bye !"
 
     elsif @player_one.score === 0 && @player_two.score === 0
-      puts "Tie"
+      puts "--- Tie ---"
       puts "-----GAME OVER-----"
       puts "Good Bye !"
 
@@ -73,6 +63,3 @@ class Math_game
   end
 
 end
-
-game = Math_game.new()
-game.play
